@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+    <title>calculator</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+    table{
+          border:5px solid grey;
+          border-collapse:separate;
+          padding:20px;
+          height:auto;
+          width:280px;
+          background-color:grey;     
+          color:white;
+          justify-content: center;
+          align-items: center;
+          height:50px;
+    }
+    td{
+        background-color:lightblue;
+        border-collapse:separate;
+        padding:20px;
+        width:30px;
+        height:30px;
+        box-shadow: 0px 4px 0px #b0c4de;
+        transition: all 0.1s;
+
+    }
+    td:hover{
+        background-color:bisque;
+    }
+    td:active {
+    transform: translateY(3px); /* Moves the button down 3 pixels */
+    box-shadow: 0px 1px 0px #b0c4de; /* Makes the shadow smaller */
+}
+.screen {
+    background-color: #222 !important; /* Makes the screen very dark */
+    color: #00ff00 !important;        /* Makes the number glow green */
+    text-align: right;                 /* Pushes the 0 to the right side */
+    padding-right: 15px;               /* Keeps the 0 from touching the edge */
+    font-family: monospace;            /* Gives it a digital look */
+    font-size: 32px;
+    height: 60px;                      /* Makes the screen taller than buttons */
+}
+.operator {
+    background-color: #ff9500 !important; /* That classic calculator orange */
+    color: white !important;
+    font-size: 24px;
+}
+
+.operator:hover {
+    background-color: #e08400 !important; /* Slightly darker on hover */
+}
+    </style>
+    </head>
+    <body>
+        <table align="center" border="1">
+            <tr>
+                <td colspan="4" class="screen" style="background-color:white; color:black; text-align:left;">0</td>
+            </tr>
+            <tr>
+                <td >c</td>
+                <td class="operator">%</td>
+                <td ><=</td>
+                <td class="operator">/</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td class="operator">*</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td class="operator">-</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td class="operator">+</td>
+            </tr>
+            <tr>
+                <td>00</td>
+                <td>0</td>
+                <td>.</td>
+                <td class="operator">=</td>
+            </tr>
+        </table>
+    </body>
+</html>
