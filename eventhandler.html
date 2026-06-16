@@ -1,0 +1,84 @@
+11.  EVENT HANDLERS:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handlers</title>
+    <style>
+        .table {
+            border: 1px solid black;
+        }
+        .submit {
+            text-align: center;
+        }
+        .btn {
+            margin: 5px;
+            padding: 3px 10px;
+            background-color: rgb(222, 225, 222);
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="alert('Form submitted successfully, Thank You!')" onfocus="style.backgroundColor='grey'">
+        <table border="" class="table">
+            <tr>
+                <!-- mouseover event handler used -->
+                <td>NAME: </td>
+                <td>
+                    <input type="text" placeholder="first name" onmouseover="style.backgroundColor='beige'"
+                        onmouseout="style.backgroundColor='white'">
+                </td>
+                <td>
+                    <input type="text" placeholder="last name">
+                </td>
+            </tr>
+            <tr>
+                <!-- onkeypress and onkeyup event handler used -->
+                <td>FATHER'S NAME: </td>
+                <td>
+                    <input type="text" placeholder="first name" onkeypress="style.backgroundColor='lightblue'"
+                        onkeyup="style.backgroundColor='white'">
+                </td>
+                <td>
+                    <input type="text" placeholder="last name">
+                </td>
+            </tr>
+            <tr>
+                <td>PERMANENT ADDRESS: </td>
+                <td>
+                    <input type="text" placeholder="street, locality">
+                </td>
+                <td>
+                    <input type="text" placeholder="city, state">
+                </td>
+            </tr>
+            <tr>
+                <td>GENDER: </td>
+                <td><input type="radio" name="gender" id="">Male</td>
+                <td><input type="radio" name="gender" id="">Female</td>
+            </tr>
+            <tr>
+                <!-- onclick event handler used -->
+                <td>EMAIL ID: </td>
+                <td colspan="2"><input type="email" id="email" name="email" placeholder="abc@gmail.com"
+                        onclick="this.style.color='darkblue'"></td>
+            </tr>
+            <tr>
+                <td>QUALIFICATION: </td>
+                <td colspan=" 2"><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>UPLOAD YOUR PHOTO: </td>
+                <td colspan="2"><input type="file" name="" id="file-photo"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="submit">
+                    <button type="submit" class="btn">SUBMIT</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
