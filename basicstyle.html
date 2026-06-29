@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Complete CSS Basics Showcase</title>
+    
+    <!-- 1. EXTERNAL CSS (The standard way - links to your style.css file) -->
+    <link rel="stylesheet" href="stylee.css">
+
+    <!-- 2. INTERNAL CSS (Written inside the head tag) -->
+    <style>
+        /* Targeting by Element Type */
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        /* Targeting by Class Name (reusable) */
+        .highlight-text {
+            color: #e11d48;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 3. INLINE CSS (Written directly inside the HTML tag element) -->
+    <h1 style="text-align: center; text-transform: uppercase;">Complete CSS Cheat-Sheet</h1>
+
+    <!-- Targeting by ID Name (unique, used only once per page) -->
+    <div id="main-card">
+        <h2>Learning Selectors & Styles</h2>
+        <p>This is a standard paragraph styled globally by the element selector.</p>
+        <p class="highlight-text">This paragraph uses a specific class style!</p>
+    </div>
+
+</body>
+</html>
