@@ -1,0 +1,28 @@
+/* ========================================================
+   EXTERNAL CSS FILE: Covers Layout, Colors, Box Model
+   ======================================================== */
+
+/* Global Body Styling */
+body {
+    background-color: #f8fafc;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #334155;
+    padding: 40px;
+}
+
+/* Box Model Example (Width, Padding, Borders, Margins) */
+#main-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;          /* Centers the card horizontally */
+    padding: 25px;              /* Space inside the card */
+    border: 2px solid #cbd5e1;  /* Border around the card */
+    border-radius: 8px;         /* Rounded corners */
+}
+
+/* Heading inside the card */
+h2 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
